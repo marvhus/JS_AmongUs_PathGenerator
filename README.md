@@ -1,0 +1,1 @@
+# Among us path generator
