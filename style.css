@@ -11,12 +11,13 @@
     padding: 30px;
 }
 
-.menu button, .nextRoom button {
+button {
     padding: 10px 50px;
     display: inline;
     float: center;
     border: none;
     border-radius: 16px;
+    margin: 10px;
 }
 
 .info {

@@ -8,26 +8,30 @@
 </head>
 <body>
     <div class="menu">
-        <button id="The Skeld" onclick="TheSkeld()">The Skeld</button>
+        <button id="The Skeld" onclick="Skeld()">The Skeld</button>
         <button id="Polus" onclick="Polus()">Polus</button>
-        <button id="Mira HQ" onclick="MiraHQ()">Mira HQ</button>
+        <button id="Mira HQ" onclick="Mira()">Mira HQ</button>
     </div>
+
     <div class="info">
+
         <strong>
             <p>Map: </p>
         </strong>
-        <p id="info1">none</p>
+
+        <p id="map">none</p>
+
         <strong>
             <p>Room: </p>
         </strong>
-        <p id="info2">none</p>
+
+        <p id="room">none</p>
+
     </div>
+
     <div class="nextRoom">
-        <button id="nextRoom" onclick="nextRoom()">Next Room</button>
+        <button id="nextRoom" onclick="room()">Next Room</button>
     </div>
 </body>
-    <script src="json/Skeld.json"></script>
-    <script src="json/Polus.json"></script>
-    <script src="json/Mira.json"></script>
-    <script src="main.js"></script>
+<script src="main.js"></script>
 </html>
