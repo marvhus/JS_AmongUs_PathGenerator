@@ -43,13 +43,13 @@ var mapMira = [
     "Admin",
     "Reactor",
     "Laboratory",
-    "launchpad",
+    "Launchpad",
     "Locker room",
     "Communicatins",
     "Medbay",
-    "torage",
-    "afeteria",
-    "balcony"
+    "Storage",
+    "Cafeteria",
+    "Balcony"
     ];
 
 var CurentMap;
@@ -58,38 +58,40 @@ var CurentMap;
 function Skeld() {
     CurentMap = "Skeld";
     document.getElementById("map").innerHTML = CurentMap;
+    document.getElementById("room").innerHTML = "none";
 }
 
 // Sets the curent map to Polus
 function Polus() {
     CurentMap = "Polus";
     document.getElementById("map").innerHTML = CurentMap;
+    document.getElementById("room").innerHTML = "none";
 }
 
 // Sets the curent map to Mira HQ
 function Mira() {
     CurentMap = "Mira";
     document.getElementById("map").innerHTML = CurentMap;
+    document.getElementById("room").innerHTML = "none";
 }
 
 // Get a room in the map u chose
 function room() {
     switch(CurentMap) {
         case "Skeld":
-            rooms(mapSkeld);
+            rooms(mapSkeld, 14);
             return;
         case "Polus":
-            rooms(mapPolus);
+            rooms(mapPolus, 16);
             return;
         case "Mira":
-            rooms(mapMira);
+            rooms(mapMira, 12);
             return;
     }
 }
 
 // Outputs a random room
-function rooms(room) {
-    var listLength = 14;
+function rooms(room, listLength) {
     var num = randomNum(listLength - 1);
     document.getElementById("room").innerHTML = room[num];
 }
